@@ -31,7 +31,7 @@ The Chat Java Application is a robust and scalable chat application developed us
 - **MySQL**: For storing user data and chat history.
 
 ### Frontend
-- **Java Swing**: For building the graphical user interface.
+- **Java FX**: For building the graphical user interface.
 
 ## Project Structure
 - **src/**: Contains the source code of the application.
