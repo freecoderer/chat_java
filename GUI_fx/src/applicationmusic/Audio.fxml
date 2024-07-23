@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="page" onDragDetected="#dragDetected" onDragDone="#dragDone" onDragDropped="#dragDropped" onDragEntered="#dragEntered" prefHeight="100.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AudioController">
+   <children>
+      <Slider fx:id="seekSlider" layoutX="7.0" layoutY="72.0" prefHeight="14.0" prefWidth="320.0" />
+      <Button layoutX="21.0" layoutY="94.0" mnemonicParsing="false" onAction="#back" prefHeight="49.0" prefWidth="55.0" styleClass="navigate" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/back.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button layoutX="154.0" layoutY="94.0" mnemonicParsing="false" onAction="#next" prefHeight="49.0" prefWidth="55.0" styleClass="navigate" stylesheets="@application.css">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/next.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ToggleButton fx:id="playpauseButton" accessibleText="play" layoutX="86.0" layoutY="94.0" mnemonicParsing="false" onAction="#playpause" prefHeight="49.0" prefWidth="55.0" styleClass="play" stylesheets="@application.css">
+         <graphic>
+            <ImageView fx:id="playPuseImage" fitHeight="38.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Button-Play-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></ToggleButton>
+      <ToggleButton fx:id="browse" layoutX="86.0" layoutY="33.0" mnemonicParsing="false" onAction="#browseButton" prefHeight="25.0" prefWidth="90.0" text="Browse....." toggleGroup="$group" />
+      <Label fx:id="durationLabel" layoutX="387.0" layoutY="71.0" prefHeight="17.0" prefWidth="0.0" />
+      <Label fx:id="playTime" layoutX="342.0" layoutY="71.0" prefHeight="17.0" prefWidth="0.0" />
+      <ImageView fitHeight="33.0" fitWidth="46.0" layoutX="378.0" layoutY="104.0" onMouseClicked="#folderOpen" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../../images/folder.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="musicBox" layoutX="34.0" layoutY="33.0" prefHeight="25.0" prefWidth="0.0" textFill="#3514d9" />
+      <Slider fx:id="volumeSlider" layoutX="201.0" layoutY="112.0" prefHeight="14.0" prefWidth="103.0" value="40.0" />
+      <ImageView fitHeight="25.0" fitWidth="39.0" layoutX="226.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/speaker.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
