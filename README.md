@@ -5,7 +5,7 @@
 ## Overview
 The Chat Java Application is a robust and scalable chat application developed using Java. This application allows multiple users to engage in real-time chat sessions. It is designed with a focus on simplicity and efficiency, providing essential chat functionalities through a clean and intuitive interface.
 
-**Note**: This project was completed in 2019 when I was still an amateur developer and before GitHub became common in Korea.
+**Note**: This project was completed in 2019 when I was still an amateur developer and unawared about GitHub at that moment
 
 ## Project Goals
 - **Real-Time Communication**: Enable real-time messaging between multiple users.
